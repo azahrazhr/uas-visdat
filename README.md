@@ -1,27 +1,45 @@
 # Dashboard Informasi Potensi Desa (PODES) di Indonesia menggunakan Tableau
 
+
+### Pengantar
+
+Dashboard informasi potensi desa ini dibuat untuk menggambarkan kondisi desa/kelurahan di Indonesia menurut keberadaan agen bahan bakar dan keluarga pengguna listrik.
+
 Link project: 
+
 https://public.tableau.com/views/DashboardInformasiPodesIndonesia/DashboardPodes?:language=en-US&:display_count=n&:origin=viz_share_link
 
 ## Dokumentasi Proses Pembuatan Dashboard Informasi
 
-### Pengantar
+### Perancangan
 
-Dashboard informasi potensi desa ini dibuat untuk menggambarkan kondisi desa/kelurahan menurut keberadaan agen bahan bakar dan keluarga pengguna listrik.
+Tahapan dalam pembuatan dashboard ini secara umum ditunjukkan pada diagram alur pada Gambar berikut:
+
+![1. Tahapan penelitian](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar1.png?raw=true)
 
 ### Pengumpulan Data
 
 Penelitian ini menggunakan data sekunder yang diperoleh dari situs resmi Badan Pusat Statistik (https://www.bps.go.id/), yaitu data Potensi Desa di Indonesia. Data yang dimaksud yaitu data banyaknya desa/kelurahan menurut keberadaan agen/penjual bahan bakar dan keluarga pengguna listrik tahun 2014, 2018, dan 2021. Dataset didapatkan dalam format excel (.xlsx).
 
-Selain data BPS, diambil pula data spasial tentang latitude dan longitude per provinsi yang ada di Indonesia. Data ini diperoleh dari website GADM (https://gadm.org/data.html) dan didapatkan dalam format shapefile (.shp). Data ini digunakan untuk kepentingan visualisasi pemetaan wilayah
+Selain data BPS, diambil pula data spasial tentang latitude dan longitude per provinsi yang ada di Indonesia. Data ini diperoleh dari website GADM (https://gadm.org/data.html) dan didapatkan dalam format shapefile (.shp).
 
-### Preprocessing
+### Preprocessing Data
 
-Setelah data dikumpulkan, tahap selanjutnya yaitu melakukan preprocessing data untuk memperbaiki data yang ada. Pada penelitian ini, peneliti melakukan pengolahan data PODES dengan menggunakan Microsoft Excel. Data yang diolah akan digunakan dalam visualisasi data menggunakan Tableau. Gambar 2 menunjukkan pengolahan data pada Microsoft Excel.
+Setelah data dikumpulkan, tahap selanjutnya yaitu melakukan preprocessing data untuk memperbaiki data yang ada. Pada penelitian ini, peneliti melakukan pengolahan data PODES dengan menggunakan Microsoft Excel. Data yang diproses terdiri dari 613 rows dan 5 column yang terdiri dari provinsi, tahun, kategori, subkategori, dan jumlah/nilai. Adapun detail perubahan data adalah sebagai berikut:
+
+* Perubahan dari tabel 3 dimensi menjadi tabel 2 dimensi
+* Menyamakan nama provinsi data PODES dengan data spasial
+* Transformasi tahun, kategori, subkategori, dan nilai dari kolom menjadi baris
+
+Data yang diolah akan digunakan dalam visualisasi data menggunakan Tableau. Gambar 2 menunjukkan pengolahan data pada Microsoft Excel.
+
+![2. Pengolahan data pada Microsoft Excel](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar2.png?raw=true)
 
 Kemudian, data PODES yang telah diproses dan data spasial dihubungkan ke Tableau. Kedua data tersebut digabung menggunakan inner join berdasarkan provinsinya. Data source yang digunakan dapat terlihat pada Gambar 3.
 
-### Implementasi dan Analisis Hasil
+![3. Tampilan data source di Tableau Public](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar3.png?raw=true)
+
+### Implementasi pada Tableau
 
 Pada tahap ini dilakukan pembuatan visualisasi terhadap data yang sudah diproses dengan menggunakan software Tableau. Visualisasi yang digunakan dalam dashboard ini antara lain adalah bar chart, stacked bar chart, peta choropleth, serta elemen lain yaitu teks. 
 
@@ -59,8 +77,7 @@ Gambar 9 menunjukkan total banyak desa menurut keluarga pengguna listrik dalam b
 
 **C. Information Dashboard**
 
-![alt text](https://github.com/azahrazhr/uas-visdat/blob/main/images/Screenshot%20(2930).png?raw=true)
-
+![alt text](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar10.jpg?raw=true)
 
 Agar representasi lebih efektif dan efisien, grafik dan teks yang telah dibuat digabung pada sebuah dashboard seperti Gambar 10 agar pengguna dapat melihat secara langsung keterkaitan antar grafiknya.
 
