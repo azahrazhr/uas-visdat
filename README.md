@@ -73,8 +73,6 @@ Fitur:
 
 #### B. Stacked Bar Chart
 
-Dua kategori yang digunakan dalam visualisasi stacked bar chart adalah banyaknya desa/kelurahan menurut agen bahan bakar dan keluarga pengguna listrik. 
-
 Gambar 5 merupakan visualisasi berbentuk stacked bar chart dari persentase banyaknya desa menurut agen bahan bakar yang dibedakan berdasarkan tahun, yaitu 2014, 2018, dan 2021. 
 
 ![5. Stacked Bar Chart 1](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar5.jpg?raw=true)
