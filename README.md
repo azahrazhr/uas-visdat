@@ -25,7 +25,7 @@ Selain data BPS, diambil pula data spasial tentang latitude dan longitude per pr
 
 ### Preprocessing Data
 
-Setelah data dikumpulkan, tahap selanjutnya yaitu melakukan preprocessing data untuk memperbaiki data yang ada. Pada penelitian ini, peneliti melakukan pengolahan data PODES dengan menggunakan Microsoft Excel. Data yang diproses terdiri dari 613 rows dan 5 column yang terdiri dari provinsi, tahun, kategori, subkategori, dan jumlah/nilai. Adapun detail perubahan data adalah sebagai berikut:
+Setelah data dikumpulkan, tahap selanjutnya yaitu melakukan preprocessing data untuk memperbaiki data yang ada. Pada penelitian ini, peneliti melakukan pengolahan data PODES dengan menggunakan Microsoft Excel. Data yang diproses terdiri dari 613 rows dan 5 columns yang terdiri dari provinsi, tahun, kategori, subkategori, dan jumlah/nilai. Adapun detail perubahan data adalah sebagai berikut:
 
 * Perubahan dari tabel 3 dimensi menjadi tabel 2 dimensi
 * Menyamakan nama provinsi data PODES dengan data spasial
@@ -48,35 +48,77 @@ Pada tahap ini dilakukan pembuatan visualisasi terhadap data yang sudah diproses
 * Peta choropleth dibuat agar user dapat melihat persebaran dan perbandingan jumlah agen bahan bakar dan keluarga pengguna listrik berdasarkan daerahnya. 
 * Teks menampilkan total agen bahan bakar atau keluarga pengguna listrik berdasarkan daerahnya. 
 
-Setelah itu dibuat output akhir berupa information dashboard tentang kondisi desa/kelurahan menurut keberadaan agen bahan bakar dan keluarga pengguna listrik dengan menggabungkan chart dan teks yang telah dibuat.  
+Setelah itu dibuat output akhir berupa **information dashboard** tentang kondisi desa/kelurahan menurut keberadaan agen bahan bakar dan keluarga pengguna listrik dengan menggabungkan chart dan teks yang telah dibuat.  
 
 Berdasarkan pengolahan data yang telah dilakukan di Tableau, maka didapatkan hasil sebagai berikut:
 
 #### A. Bar Chart
 
-Gambar 4 menunjukkan provinsi dengan banyak desa menurut agen bahan bakar dan keluarga pengguna listriknya dalam bentuk bar chart. Hasil diurutkan dari provinsi dengan jumlah tertinggi ke terendah.
+Gambar 4 menunjukkan provinsi dengan banyak desa/kelurahan menurut agen bahan bakar dan keluarga pengguna listriknya dalam bentuk bar chart. Hasil diurutkan dari provinsi dengan jumlah tertinggi ke terendah.
 
+![4. Bar Chart](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar4.jpg?raw=true)
+
+Keterangan dimensi dan measures yang digunakan adalah:
+* Row = nama provinsi
+* Column = aggregat dari jumlah agen bahan bakar dan keluarga pengguna listrik
+* Measures = aggregat
+
+Fitur:
+* Tooltip = keterangan tentang jumlah agen bahan bakar dan keluarga pengguna listrik per provinsi
+* Filter berdasarkan provinsi dan tahun
 
 #### B. Stacked Bar Chart
 
-Dua kategori yang digunakan dalam visualisasi stacked bar chart adalah banyaknya desa/kelurahan menurut agen bahan bakar dan keluarga pengguna listrik. Gambar 5 merupakan visualisasi berbentuk stacked bar chart dari persentase banyaknya desa menurut agen bahan bakar yang dibedakan berdasarkan tahun, yaitu 2014, 2018, dan 2021. Warna merah tua menunjukkan tidak adanya agen, warna orange tua merepresentasikan minyak tanah, sedangkan warna orange muda adalah LPG.
-Berdasarkan gambar di atas, dapat terlihat bahwa secara keseluruhan, persentase banyak desa menurut agen bahan bakar terbesar di Indonesia adalah agen/penjual LPG.
+Dua kategori yang digunakan dalam visualisasi stacked bar chart adalah banyaknya desa/kelurahan menurut agen bahan bakar dan keluarga pengguna listrik. 
 
-Gambar 6 menggambarkan visualisasi berbentuk stacked bar chart dari persentase banyaknya desa menurut keluarga pengguna listrik yang dibedakan berdasarkan tahun, yaitu 2014, 2018, dan 2021. Warna biru tua menunjukkan tidak adanya listrik, warna biru agak tua merepresentasikan PLN, sedangkan warna biru muda adalah non-PLN.
-Berdasarkan gambar di atas, dapat terlihat bahwa secara keseluruhan, persentase banyak desa menurut keluarga pengguna listrik terbesar di Indonesia adalah menggunakan PLN.
+Gambar 5 merupakan visualisasi berbentuk stacked bar chart dari persentase banyaknya desa menurut agen bahan bakar yang dibedakan berdasarkan tahun, yaitu 2014, 2018, dan 2021. 
+
+![5. Stacked Bar Chart 1](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar5.jpg?raw=true)
+
+Keterangan warna berdasarkan sub kategori:
+* Merah tua = tidak adanya agen
+* Orange tua = minyak tanah
+* Orange muda = LPG
+
+Keterangan dimensi dan measures yang digunakan adalah:
+* Row = tahun
+* Column = jumlah agen bahan bakar 
+* Measures = persentase
+
+Fitur:
+* Tooltip = keterangan tentang subkategori, tahun, dan persentase
+* Filter berdasarkan provinsi dan tahun
+
+Gambar 6 menggambarkan visualisasi berbentuk stacked bar chart dari persentase banyaknya desa menurut keluarga pengguna listrik yang dibedakan berdasarkan tahun, yaitu 2014, 2018, dan 2021. 
+
+![6. Stacked Bar Chart 2](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar6.jpg?raw=true)
+
+Keterangan warna berdasarkan sub kategori:
+* Biru tua = tidak ada listrik
+* Biru agak tua = PLN
+* Biru muda = non-PLN
+
+Keterangan dimensi dan measures yang digunakan adalah:
+* Row = tahun
+* Column = jumlah keluarga pengguna listrik 
+* Measures = persentase
+
+Fitur:
+* Tooltip = keterangan tentang subkategori, tahun, dan persentase
+* Filter berdasarkan provinsi dan tahun
 
 #### C. Peta Choropleth
 
 Pada Gambar 7, persebaran agen bahan bakar dan keluarga pengguna listrik di setiap provinsi di Indonesia ditampilkan dalam bentuk peta choropleth berupa kartogram area, dimana tiap provinsi diwakili oleh banyak desa menurut jumlah agen bahan bakar dan keluarga pengguna listriknya masing-masing. Semakin gelap warna biru yang terdapat pada peta, maka semakin tinggi nilai rata-rata jumlah agen bahan bakar dan keluarga pengguna listrik.
 Dari tampilan peta pesebaran tersebut dapat kita lihat sejumlah provinsi yang terdapat di Pulau Jawa, yaitu Jawa Timur dan Jawa Tengah, merupakan provinsi dengan jumlah agen bahan bakar dan keluarga pengguna listrik tertinggi di Indonesia, selebihnya agen bahan bakar dan keluarga pengguna listrik tertinggi juga dihasilkan di Provinsi Sumatera Utara dan Aceh yang lebih sedikit dibandingkan Jawa Timur dan Jawa Tengah.
 
-**D. Teks**
+#### D. Teks
 
 Selain menggunakan chart, teks juga akan digunakan untuk mengetahui total banyak desa/kelurahan menurut agen bahan bakar dan keluarga pengguna listrik. 
 Gambar 8 menunjukkan total banyak desa menurut agen bahan bakar dalam bentuk teks
 Gambar 9 menunjukkan total banyak desa menurut keluarga pengguna listrik dalam bentuk teks.
 
-**C. Information Dashboard**
+#### E. Information Dashboard
 
 ![alt text](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar10.jpg?raw=true)
 
