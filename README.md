@@ -59,7 +59,7 @@ Gambar 9 menunjukkan total banyak desa menurut keluarga pengguna listrik dalam b
 
 **C. Information Dashboard**
 
-![alt text](https://github.com/[azahrazhr]/[uas-visdat]/blob/[images]/Screenshot (2930).png?raw=true)
+![alt text](https://github.com/azahrazhr/uas-visdat/blob/images/Screenshot (2930).png?raw=true)
 
 
 Agar representasi lebih efektif dan efisien, grafik dan teks yang telah dibuat digabung pada sebuah dashboard seperti Gambar 10 agar pengguna dapat melihat secara langsung keterkaitan antar grafiknya.
