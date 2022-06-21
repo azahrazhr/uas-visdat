@@ -158,4 +158,4 @@ Filter berdasarkan provinsi dapat dilakukan dengan tiga cara.
 
 Fitur:
 * Tooltip per masing-masing chart dan teks
-* Judul, penjelasan singkat, serta sumber dan pembuat dashboard ditampilkan di bagian kiri dashboard.
+* Judul, penjelasan singkat, sumber data, dan pembuat dashboard ditampilkan di bagian kiri dashboard.
