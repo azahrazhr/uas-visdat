@@ -41,7 +41,7 @@ Kemudian, data PODES yang telah diproses dan data spasial dihubungkan ke Tableau
 
 Setelah data diimport, dilakukan perubahan nama salah satu provinsi yaitu Jakarta, dari Jakarta Raya menjadi DKI Jakarta menggunakan fitur Aliases di Tableau.
 
-Selain itu, perubahan tipe data dilakukan untuk kolom Tahun.
+Selain itu, perubahan tipe data dilakukan untuk kolom Tahun dari Number menjadi Date.
 
 ### Implementasi pada Tableau
 
