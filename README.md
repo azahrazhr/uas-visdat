@@ -3,7 +3,7 @@
 
 ### Pengantar
 
-Dashboard informasi potensi desa ini dibuat untuk menggambarkan kondisi desa/kelurahan di Indonesia menurut keberadaan agen bahan bakar dan keluarga pengguna listrik.
+Dashboard informasi potensi desa ini dibuat untuk menggambarkan banyak desa/kelurahan di Indonesia menurut keberadaan agen bahan bakar dan keluarga pengguna listrik.
 
 Link project: 
 
