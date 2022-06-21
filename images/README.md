@@ -1,1 +1,1 @@
-File berupa gambar dokumentasi
+Folder ini berisi kumpulan gambar dokumentasi dashboard informasi potensi desa di Indonesia
