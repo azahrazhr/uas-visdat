@@ -41,6 +41,8 @@ Kemudian, data PODES yang telah diproses dan data spasial dihubungkan ke Tableau
 
 Setelah data diimport, dilakukan perubahan nama salah satu provinsi yaitu Jakarta, dari Jakarta Raya menjadi DKI Jakarta menggunakan fitur Aliases di Tableau.
 
+Selain itu, perubahan tipe data dilakukan untuk kolom Tahun.
+
 ### Implementasi pada Tableau
 
 Pada tahap ini dilakukan pembuatan visualisasi terhadap data yang sudah diproses dengan menggunakan software Tableau. Visualisasi yang digunakan dalam dashboard ini antara lain adalah bar chart, stacked bar chart, peta choropleth, serta elemen lain yaitu teks. 
