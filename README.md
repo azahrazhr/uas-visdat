@@ -59,6 +59,9 @@ Gambar 9 menunjukkan total banyak desa menurut keluarga pengguna listrik dalam b
 
 **C. Information Dashboard**
 
+![alt text](https://github.com/[azahrazhr]/[uas-visdat]/blob/[images]/Screenshot (2930).png?raw=true)
+
+
 Agar representasi lebih efektif dan efisien, grafik dan teks yang telah dibuat digabung pada sebuah dashboard seperti Gambar 10 agar pengguna dapat melihat secara langsung keterkaitan antar grafiknya.
 
 Pada gambar di atas, ditampilkan dashboard yang berguna memudahkan pengguna dalam melihat pemetaan jumlah agen bahan bakar dan keluarga pengguna listrik, mengetahui total dan persentase agen bahan bakar dan keluarga pengguna listrik, dan juga melihat urutan tertinggi ke terendah dari provinsi di Indonesia dengan banyak desa menurut jumlah agen bahan bakar dan keluarga pengguna listrik.
