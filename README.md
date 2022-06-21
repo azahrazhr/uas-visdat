@@ -41,14 +41,14 @@ Kemudian, data PODES yang telah diproses dan data spasial dihubungkan ke Tableau
 
 Setelah data diimport, dilakukan perubahan nama salah satu provinsi yaitu Jakarta, dari Jakarta Raya menjadi DKI Jakarta menggunakan fitur Aliases di Tableau.
 
-Selain itu, perubahan tipe data dilakukan untuk kolom Tahun dari Number menjadi Date.
+Selain itu, dilakukan perubahan tipe data untuk kolom Tahun dari Number menjadi Date.
 
 ### Implementasi pada Tableau
 
 Pada tahap ini dilakukan pembuatan visualisasi terhadap data yang sudah diproses dengan menggunakan software Tableau. Visualisasi yang digunakan dalam dashboard ini antara lain adalah bar chart, stacked bar chart, peta choropleth, serta elemen lain yaitu teks. 
 
-* Bar chart menggambarkan urutan provinsi tertinggi ke terendah dengan banyak desa menurut agen bahan bakar dan keluarga pengguna listrik. 
-* Stacked bar chart menggambarkan persentase banyaknya desa menurut agen bahan bakar atau keluarga pengguna listrik yang dibedakan berdasarkan tahun dan subkategorinya. 
+* Bar chart menggambarkan urutan provinsi tertinggi hingga terendah dengan banyak desa/kelurahan menurut agen bahan bakar dan keluarga pengguna listrik. 
+* Stacked bar chart menggambarkan persentase banyaknya desa/kelurahan menurut agen bahan bakar atau keluarga pengguna listrik yang dibedakan berdasarkan tahun dan subkategorinya. 
 * Peta choropleth dibuat agar user dapat melihat persebaran dan perbandingan jumlah agen bahan bakar dan keluarga pengguna listrik berdasarkan daerahnya. 
 * Teks menampilkan total agen bahan bakar atau keluarga pengguna listrik berdasarkan daerahnya. 
 
@@ -73,7 +73,7 @@ Fitur:
 
 #### B. Stacked Bar Chart
 
-Gambar 5 merupakan visualisasi berbentuk stacked bar chart dari persentase banyaknya desa menurut agen bahan bakar yang dibedakan berdasarkan tahun, yaitu 2014, 2018, dan 2021. 
+Gambar 5 merupakan visualisasi berbentuk stacked bar chart dari persentase banyaknya desa/kelurahan menurut agen bahan bakar yang dibedakan berdasarkan tahun, yaitu 2014, 2018, dan 2021. 
 
 ![5. Stacked Bar Chart 1](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar5.jpg?raw=true)
 
@@ -91,7 +91,7 @@ Fitur:
 * Tooltip = keterangan tentang subkategori, tahun, dan persentase
 * Filter berdasarkan provinsi dan tahun
 
-Gambar 6 menggambarkan visualisasi berbentuk stacked bar chart dari persentase banyaknya desa menurut keluarga pengguna listrik yang dibedakan berdasarkan tahun, yaitu 2014, 2018, dan 2021. 
+Gambar 6 menggambarkan visualisasi berbentuk stacked bar chart dari persentase banyaknya desa/kelurahan menurut keluarga pengguna listrik yang dibedakan berdasarkan tahun, yaitu 2014, 2018, dan 2021. 
 
 ![6. Stacked Bar Chart 2](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar6.jpg?raw=true)
 
@@ -127,7 +127,7 @@ Fitur:
 
 Selain menggunakan chart, teks juga akan digunakan untuk mengetahui total banyak desa/kelurahan menurut agen bahan bakar dan keluarga pengguna listrik.
 
-Gambar 8 menunjukkan total banyak desa menurut agen bahan bakar dalam bentuk teks.
+Gambar 8 menunjukkan total banyak desa/kelurahan menurut agen bahan bakar dalam bentuk teks.
 
 ![8. Teks 1](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar8.jpg?raw=true)
 
@@ -135,7 +135,7 @@ Fitur:
 * Tooltip = keterangan tentang total agen bahan bakar
 * Filter berdasarkan provinsi dan tahun
 
-Gambar 9 menunjukkan total banyak desa menurut keluarga pengguna listrik dalam bentuk teks.
+Gambar 9 menunjukkan total banyak desa/kelurahan menurut keluarga pengguna listrik dalam bentuk teks.
 
 ![9. Teks 2](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar9.jpg?raw=true)
 
