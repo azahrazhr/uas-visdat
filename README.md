@@ -33,11 +33,13 @@ Sedangkan teks digunakan untuk menampilkan total agen bahan bakar atau keluarga 
 Berdasarkan pengolahan data yang telah dilakukan di Tableau, maka didapatkan hasil sebagai berikut:
 
 **A. Bar Chart**
+
 Gambar 4 menunjukkan provinsi dengan banyak desa menurut agen bahan bakar dan keluarga pengguna listriknya dalam bentuk bar chart. Hasil diurutkan dari provinsi dengan jumlah tertinggi ke terendah.
 
 Dari gambar di atas, dapat dilihat bahwa provinsi yang memiliki nilai tertinggi adalah Jawa Timur, Jawa Tengah, dan Sumatera Utara.
 
 **B. Stacked Bar Chart**
+
 Dua kategori yang digunakan dalam visualisasi stacked bar chart adalah banyaknya desa/kelurahan menurut agen bahan bakar dan keluarga pengguna listrik. Gambar 5 merupakan visualisasi berbentuk stacked bar chart dari persentase banyaknya desa menurut agen bahan bakar yang dibedakan berdasarkan tahun, yaitu 2014, 2018, dan 2021. Warna merah tua menunjukkan tidak adanya agen, warna orange tua merepresentasikan minyak tanah, sedangkan warna orange muda adalah LPG.
 Berdasarkan gambar di atas, dapat terlihat bahwa secara keseluruhan, persentase banyak desa menurut agen bahan bakar terbesar di Indonesia adalah agen/penjual LPG.
 
@@ -45,15 +47,18 @@ Gambar 6 menggambarkan visualisasi berbentuk stacked bar chart dari persentase b
 Berdasarkan gambar di atas, dapat terlihat bahwa secara keseluruhan, persentase banyak desa menurut keluarga pengguna listrik terbesar di Indonesia adalah menggunakan PLN.
 
 **C. Peta Choropleth**
+
 Pada Gambar 7, persebaran agen bahan bakar dan keluarga pengguna listrik di setiap provinsi di Indonesia ditampilkan dalam bentuk peta choropleth berupa kartogram area, dimana tiap provinsi diwakili oleh banyak desa menurut jumlah agen bahan bakar dan keluarga pengguna listriknya masing-masing. Semakin gelap warna biru yang terdapat pada peta, maka semakin tinggi nilai rata-rata jumlah agen bahan bakar dan keluarga pengguna listrik.
 Dari tampilan peta pesebaran tersebut dapat kita lihat sejumlah provinsi yang terdapat di Pulau Jawa, yaitu Jawa Timur dan Jawa Tengah, merupakan provinsi dengan jumlah agen bahan bakar dan keluarga pengguna listrik tertinggi di Indonesia, selebihnya agen bahan bakar dan keluarga pengguna listrik tertinggi juga dihasilkan di Provinsi Sumatera Utara dan Aceh yang lebih sedikit dibandingkan Jawa Timur dan Jawa Tengah.
 
 **D. Teks**
+
 Selain menggunakan chart, teks juga akan digunakan untuk mengetahui total banyak desa/kelurahan menurut agen bahan bakar dan keluarga pengguna listrik. 
 Gambar 8 menunjukkan total banyak desa menurut agen bahan bakar dalam bentuk teks
 Gambar 9 menunjukkan total banyak desa menurut keluarga pengguna listrik dalam bentuk teks.
 
 **C. Information Dashboard**
+
 Agar representasi lebih efektif dan efisien, grafik dan teks yang telah dibuat digabung pada sebuah dashboard seperti Gambar 10 agar pengguna dapat melihat secara langsung keterkaitan antar grafiknya.
 
 Pada gambar di atas, ditampilkan dashboard yang berguna memudahkan pengguna dalam melihat pemetaan jumlah agen bahan bakar dan keluarga pengguna listrik, mengetahui total dan persentase agen bahan bakar dan keluarga pengguna listrik, dan juga melihat urutan tertinggi ke terendah dari provinsi di Indonesia dengan banyak desa menurut jumlah agen bahan bakar dan keluarga pengguna listrik.
