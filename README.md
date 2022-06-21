@@ -7,7 +7,7 @@ Dashboard informasi potensi desa ini dibuat untuk menggambarkan kondisi desa/kel
 
 Link project: 
 
-https://public.tableau.com/views/DashboardInformasiPodesIndonesia/DashboardPodes?:language=en-US&:display_count=n&:origin=viz_share_link
+https://public.tableau.com/views/DashboardInformasiPodesIndonesia/DashboardPodes
 
 ## Dokumentasi Proses Pembuatan Dashboard Informasi
 
@@ -38,6 +38,8 @@ Data yang diolah akan digunakan dalam visualisasi data menggunakan Tableau. Gamb
 Kemudian, data PODES yang telah diproses dan data spasial dihubungkan ke Tableau. Kedua data tersebut digabung menggunakan inner join berdasarkan provinsinya. Data source yang digunakan dapat terlihat pada Gambar 3.
 
 ![3. Tampilan data source di Tableau Public](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar3.png?raw=true)
+
+Setelah data diimport, dilakukan perubahan nama salah satu provinsi yaitu Jakarta, dari Jakarta Raya menjadi DKI Jakarta menggunakan fitur Aliases di Tableau.
 
 ### Implementasi pada Tableau
 
@@ -110,20 +112,50 @@ Fitur:
 #### C. Peta Choropleth
 
 Pada Gambar 7, persebaran agen bahan bakar dan keluarga pengguna listrik di setiap provinsi di Indonesia ditampilkan dalam bentuk peta choropleth berupa kartogram area, dimana tiap provinsi diwakili oleh banyak desa menurut jumlah agen bahan bakar dan keluarga pengguna listriknya masing-masing. Semakin gelap warna biru yang terdapat pada peta, maka semakin tinggi nilai rata-rata jumlah agen bahan bakar dan keluarga pengguna listrik.
-Dari tampilan peta pesebaran tersebut dapat kita lihat sejumlah provinsi yang terdapat di Pulau Jawa, yaitu Jawa Timur dan Jawa Tengah, merupakan provinsi dengan jumlah agen bahan bakar dan keluarga pengguna listrik tertinggi di Indonesia, selebihnya agen bahan bakar dan keluarga pengguna listrik tertinggi juga dihasilkan di Provinsi Sumatera Utara dan Aceh yang lebih sedikit dibandingkan Jawa Timur dan Jawa Tengah.
+
+![7. Peta Choropleth](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar7.jpg?raw=true)
+
+Keterangan dimensi dan measures yang digunakan adalah:
+* Row = latitude
+* Column = longitude
+
+Fitur:
+* Tooltip = keterangan tentang jumlah keluarga pengguna listrik, agen bahan bakar, dan keseluruhan
+* Filter berdasarkan provinsi dan tahun
 
 #### D. Teks
 
-Selain menggunakan chart, teks juga akan digunakan untuk mengetahui total banyak desa/kelurahan menurut agen bahan bakar dan keluarga pengguna listrik. 
-Gambar 8 menunjukkan total banyak desa menurut agen bahan bakar dalam bentuk teks
+Selain menggunakan chart, teks juga akan digunakan untuk mengetahui total banyak desa/kelurahan menurut agen bahan bakar dan keluarga pengguna listrik.
+
+Gambar 8 menunjukkan total banyak desa menurut agen bahan bakar dalam bentuk teks.
+
+![8. Teks 1](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar8.jpg?raw=true)
+
+Fitur:
+* Tooltip = keterangan tentang total agen bahan bakar
+* Filter berdasarkan provinsi dan tahun
+
 Gambar 9 menunjukkan total banyak desa menurut keluarga pengguna listrik dalam bentuk teks.
+
+![9. Teks 2](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar9.jpg?raw=true)
+
+Fitur:
+* Tooltip = keterangan tentang total keluarga pengguna listrik
+* Filter berdasarkan provinsi dan tahun
 
 #### E. Information Dashboard
 
-![alt text](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar10.jpg?raw=true)
-
 Agar representasi lebih efektif dan efisien, grafik dan teks yang telah dibuat digabung pada sebuah dashboard seperti Gambar 10 agar pengguna dapat melihat secara langsung keterkaitan antar grafiknya.
 
-Pada gambar di atas, ditampilkan dashboard yang berguna memudahkan pengguna dalam melihat pemetaan jumlah agen bahan bakar dan keluarga pengguna listrik, mengetahui total dan persentase agen bahan bakar dan keluarga pengguna listrik, dan juga melihat urutan tertinggi ke terendah dari provinsi di Indonesia dengan banyak desa menurut jumlah agen bahan bakar dan keluarga pengguna listrik.
+![alt text](https://github.com/azahrazhr/uas-visdat/blob/main/images/Gambar10.jpg?raw=true)
 
-Information dashboard ini bersifat interaktif, karena pengguna dapat memfilter data berdasarkan provinsi dan tahun yang ada. Filter berdasarkan provinsi dapat dilakukan dengan tiga cara. Pertama, dengan mengklik atau melakukan rectangular selection pada provinsi yang diinginkan di peta choropleth. Kedua, dengan mengklik provinsi yang diinginkan di bar chart. Ketiga, dengan menggunakan filter dropdown yang tersedia di bagian kiri dashboard. Pengguna juga dapat melihat informasi detail berdasarkan chart yang ada ketika melakukan hover. Selain itu, pada dashboard ini ditampilkan judul, penjelasan singkat, serta sumber dan pembuat dashboard di bagian kiri dashboard.
+Size dashboard: 1470 px x 785 px
+
+Filter berdasarkan provinsi dapat dilakukan dengan tiga cara. 
+1. Mengklik atau melakukan rectangular selection pada provinsi yang diinginkan di peta choropleth
+2. Mengklik provinsi yang diinginkan di bar chart
+3. Menggunakan filter dropdown yang tersedia di bagian kiri dashboard. 
+
+Fitur:
+* Tooltip per masing-masing chart dan teks
+* Judul, penjelasan singkat, serta sumber dan pembuat dashboard ditampilkan di bagian kiri dashboard.
